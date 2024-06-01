@@ -489,7 +489,7 @@ char* CmdMessenger::readStringArg()
 		return current;
 	}
 	ArgOk = false;
-	return '\0';
+	return NULL; /* Changed to NULL from return '\0' to properly work on ESP32 */
 }
 
 /**
